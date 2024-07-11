@@ -14,22 +14,17 @@ public class Operators {
     // }
 
     int i=5;
-    int multiple2;
-    int multiple7;
-    int multiple;
+    // int multiple2;
+    // int multiple7;
+    // int multiple;
 
-    // while (i<15){
-    //   if(
-    //     i%2==0 && i%7==0)
-    //     System.out.println(i);
-    //     i++;
+    while (i<15){
+      if(i%2==0 && i%7==0)
       
-    // }
-
-     void multiple2(int i){
-
-    return int 
-
+        System.out.println(i);
+        i++;
+      
     }
+
     }
 }
