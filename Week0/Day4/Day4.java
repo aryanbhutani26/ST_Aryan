@@ -101,31 +101,60 @@ public class Day4 {
     // System.out.println("The maximum number is: " + maximum);
     // }
 
-    public static void bubbleSort(int[] arr) {
-        for (int turn = 1; turn < arr.length; turn++) {
-            int temp = arr[turn];
-            int j = turn - 1;
-            while (j >= 0 && arr[j] > temp) {
-                arr[j + 1] = arr[j];
-                j = j - 1;
-            }
-            arr[j + 1] = temp;
-        }
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
-        }
-    }
+    // public static void bubbleSort(int[] arr) {
+    //     for (int turn = 1; turn < arr.length; turn++) {
+    //         int temp = arr[turn];
+    //         int j = turn - 1;
+    //         while (j >= 0 && arr[j] > temp) {
+    //             arr[j + 1] = arr[j];
+    //             j = j - 1;
+    //         }
+    //         arr[j + 1] = temp;
+    //     }
+    //     for (int i = 0; i < arr.length; i++) {
+    //         System.out.println(arr[i]);
+    //     }
+    // }
 
-    public static void main(String[] args) {
-                        Scanner sc = new Scanner(System.in);
-                        int [] arr = new int[4];
-                        for (int i = 0; i < arr.length; i++) {
-                            System.out.println("Enter the value of arr[" + i + "] : ");
-                            arr[i] = sc.nextInt();
-                            }
+    // public static void main(String[] args) {
+    //                     Scanner sc = new Scanner(System.in);
+    //                     int [] arr = new int[4];
+    //                     for (int i = 0; i < arr.length; i++) {
+    //                         System.out.println("Enter the value of arr[" + i + "] : ");
+    //                         arr[i] = sc.nextInt();
+    //                         }
                             
-                            System.out.println();
-                            bubbleSort(arr);
-                            }
+    //                         System.out.println();
+    //                         bubbleSort(arr);
+    //                         }
+
+    public class ArraysReversing1 {
+        public static void reverseArray1(int []array1){
+            int i=0; 
+            int j = array1.length-1;
+            while (j>i)
+            change(array1,i++,j--);
+        }
+        public static void  change(int [] adii , int i, int j){
+            int temp = adii[i];
+            adii[i]=adii[j];
+            adii[j]=temp;
+    
+        }
+        public static void printArray(int [ ] arr){
+              for(int i=0;i<arr.length;i++)
+               System.out.print(arr[i]+" ");
+           }
+    
+        public static void main(String[] args) {
+            int [] arr1  = { 4 , 5, 7 ,78,9};
+            reverseArray1(arr1);
+            change(arr1,0,4 );
+        
+            printArray(arr1);
+        }
+    
+        
+    }
 
 }
