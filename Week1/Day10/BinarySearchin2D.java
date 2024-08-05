@@ -39,6 +39,6 @@ public class BinarySearchin2D {
             return false;
         }
     }
-   int temp= (int)Math.pow(10,9);
+//    int temp= (int)Math.pow(10,9);
 
 }
