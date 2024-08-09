@@ -63,7 +63,7 @@ public class Nqueen {
     }
 
     public static void main(String[] args) {
-        int n = 35;
+        int n = 4;
         int [][ ] board = new int[n][n];
         nqueen(board, 0, n);
     }
