@@ -49,7 +49,9 @@ public class Hashmaps {
         }
 
         // New function to do the above task
-        Mp.put(i , Mp.getOrDefault(i, 1));
+        for(int i=0; i<arr.length;i++){
+            Mp.put(i , Mp.getOrDefault(i, 1));
+        }
 
         
         System.out.println(Mp);

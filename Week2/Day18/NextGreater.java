@@ -21,7 +21,6 @@ public class NextGreater {
             stk.push(arr[i]);
         }
 
-        s.charAt()
         return NGE;
     }
 
